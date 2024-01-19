@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="brand-logo">Your Logo</div>
+        <div class="login-signup">
+            <button>Login</button>
+            <button>Signup</button>
+        </div>
+    </header>
+
+    <section class="chat-section">
+        <div class="message-screen" id="messageScreen">
+            <div class="system-message">Welcome! How can I assist you today?</div>
+        </div>
+        <div class="chat-box">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <section class="learning-plan-section">
+        <h2>Learning Plan</h2>
+        <div class="learning-plan" id="learningPlan">
+            <!-- Learning Plan details will be dynamically added here -->
+        </div>
+        <button id="saveButton" onclick="saveLearningPlan()">Save Learning Plan</button>
+        <button id="downloadButton" onclick="downloadLearningPlan()">Download PDF</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
